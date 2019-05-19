@@ -17,7 +17,7 @@ $(function() {
         userTextElement.val("");
 
     });  
-    $('ul').on('click','button', function(event) {
+    $('ul').on('click','button.shopping-item-delete', function(event) {
       this.closest( "li" ).remove();
     });
     
