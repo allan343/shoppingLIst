@@ -17,8 +17,8 @@ $(function() {
         userTextElement.val("");
 
     });  
-    $('ul').on('click', 'li', function(event) {
-      this.remove();
+    $('ul').on('click','button', function(event) {
+      this.closest( "li" ).remove();
     });
     
 })
