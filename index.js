@@ -15,6 +15,10 @@ $(function() {
               </div></li>`
         );
         userTextElement.val("");
-    });  
 
+    });  
+    $('ul').on('click', 'li', function(event) {
+      this.remove();
+    });
+    
 })
