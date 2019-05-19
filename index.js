@@ -20,5 +20,14 @@ $(function() {
     $('ul').on('click','button.shopping-item-delete', function(event) {
       this.closest( "li" ).remove();
     });
-    
+    $('ul').on('click','button.shopping-item-toggle', function(event) {
+      //this.parent().closest("span").toggleClass('shopping-item__checked');
+     // const currentButton = this;
+      const currentButton = $(".shopping-item-toggle");
+      const currentButtonParent = currentButton.parent();
+      const currentLi = currentButtonParent.parent();
+      currentLi.find(".shopping-item").toggleClass('shopping-item__checked');
+
+    });
+
 })
